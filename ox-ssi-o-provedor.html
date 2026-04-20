@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Oxóssi: o provedor · Conversando Sobre a Umbanda</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#f5f0e8;--dark:#2a1a0e;--mid:#5c3d1e;--gold:#c9943a;--gold-light:#e8c87a}
+body{background:var(--dark);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.8;overflow-x:hidden}
+header{text-align:center;padding:40px 20px 28px;border-bottom:1px solid rgba(201,148,58,.25);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.1) 0%,transparent 70%)}
+header a{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,3vw,1.8rem);color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:block;line-height:1.3}
+header p{margin-top:10px;font-size:.9rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+nav{display:flex;justify-content:center;gap:24px;padding:14px 20px;border-bottom:1px solid rgba(201,148,58,.12);flex-wrap:wrap}
+nav a{font-family:'Cinzel Decorative',serif;font-size:.6rem;color:var(--gold);text-decoration:none;letter-spacing:.15em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
+nav a:hover{opacity:1}
+.container{max-width:720px;margin:0 auto;padding:52px 24px 80px}
+.breadcrumb{font-size:.75rem;color:rgba(245,240,232,.4);margin-bottom:16px}
+.breadcrumb a{color:var(--gold);text-decoration:none;opacity:.7}
+.post-tag{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);letter-spacing:.25em;text-transform:uppercase;display:block;margin-bottom:12px}
+h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3.5vw,2.1rem);color:var(--cream);line-height:1.25;margin-bottom:18px}
+.meta{font-size:.82rem;color:rgba(245,240,232,.4);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(201,148,58,.18)}
+.meta span{color:var(--gold);opacity:.8}
+.body p{margin-bottom:24px;color:rgba(245,240,232,.85)}
+.body p:first-of-type::first-letter{font-family:'Cinzel Decorative',serif;font-size:3.8rem;float:left;line-height:.8;margin:8px 10px 0 0;color:var(--gold)}
+.back{display:inline-block;margin-top:44px;padding:10px 28px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:'Cinzel Decorative',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;transition:background .3s,color .3s}
+.back:hover{background:var(--gold);color:var(--dark)}
+footer{text-align:center;padding:44px 24px;border-top:1px solid rgba(201,148,58,.15);color:rgba(245,240,232,.3);font-size:.78rem}
+.footer-logo{font-family:'Cinzel Decorative',serif;color:var(--gold);opacity:.45;font-size:.82rem;margin-bottom:8px}
+.divider{text-align:center;color:var(--gold);opacity:.35;letter-spacing:.8em;margin:40px 0;font-size:1rem}
+/* INDEX */
+.hero{text-align:center;padding:60px 24px 48px;border-bottom:1px solid rgba(201,148,58,.2);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.12) 0%,transparent 70%)}
+.hero h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold-light);line-height:1.25;text-shadow:0 2px 30px rgba(201,148,58,.3)}
+.hero p{margin-top:14px;font-size:.95rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+.section-title{font-family:'Cinzel Decorative',serif;font-size:.68rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,148,58,.5),transparent)}
+.search{width:100%;padding:12px 16px;background:rgba(92,61,30,.2);border:1px solid rgba(201,148,58,.25);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:1rem;margin-bottom:28px;outline:none;transition:border-color .3s}
+.search:focus{border-color:rgba(201,148,58,.6)}
+.search::placeholder{color:rgba(245,240,232,.3)}
+.post-item{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid rgba(201,148,58,.1);text-decoration:none;color:inherit;transition:padding-left .2s}
+.post-item:hover .item-title{color:var(--gold)}
+.item-num{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);opacity:.35;min-width:26px;flex-shrink:0}
+.item-title{font-family:'Cinzel Decorative',serif;font-size:.75rem;color:var(--cream);line-height:1.4;flex:1;transition:color .3s}
+.item-arrow{color:var(--gold);opacity:.3;font-size:.8rem;flex-shrink:0}
+.hidden{display:none!important}
+@media(max-width:600px){.item-title{font-size:.65rem}h1{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<header><a href="../index.html">Conversando Sobre a Umbanda</a><p>Luz, fé e conhecimento para os filhos da Umbanda</p></header>
+<nav><a href="../index.html">Início</a><a href="../index.html">Todos os Posts</a></nav>
+<div class="container">
+  <p class="breadcrumb"><a href="../index.html">Início</a> › Oxóssi: o provedor</p>
+  <h1>Oxóssi: o provedor</h1>
+  <div class="meta"><span>Luiz de Miranda</span> · Conversando Sobre a Umbanda</div>
+  <div class="body">
+<p>Muitos desses caçadores, fizeram grandes prodígios, como: curas através de plantas, descobertas de lugares seguros para instalar suas aldeias, vitórias sobre invasores de seus territórios, capacidade de prever catástrofes, comunicação com o mundo dos mortos, dentre tantos outros. Graças a esses feitos, a memória ancestral do Orixá Oxóssi permanece até os dias atuais nos Terreiros de Umbanda e Candomblé. Pois, este Orixá, está ligado as grandes descobertas científicas no campo da medicina, meteorologia, tecnologia, meio ambiente, sustentabilidade, astronomia e etc...</p>
+<p>A Oxóssi deve-se a capacidade atual, adquirida pelos seres humanos, em manipular, pesquisar, aplicar todas as descobertas para o bem da humanidade. É Oxóssi quem aponta o caminho, inspirando grandes mentes a projetarem suas ideias nas pesquisas que trazem bem-estar para raça humana.</p>
+<p>Oxóssi é o provedor de todo alimento que vai à mesa dos seres humanos. Sem Oxóssi não há alimento, não há vida.</p>
+<p>Orixá das matas e florestas, senhor de tudo que nela habita. Aquele que ensina a “conversar” com os animais e as plantas, retirando deles tudo que se necessita para a sobrevivência do planeta e da raça humana, de forma sustentável e equilibrada. Oxóssi condena quem mata animal, que não seja para própria alimentação e de sua comunidade. Oxóssi está na esperteza de um leopardo, no balé e no canto dos pássaros, no olhar penetrante de um tigre, na realeza de um leão, na alegria dos macacos, na beleza do pavão... Oxóssi é o elo entre os homens e a natureza.</p>
+<p>Oxóssi é também o contemplador, aquele que dirige seu olhar a tudo que lhe fascina. É a inspiração do artista ao pintar uma tela, compor uma música, escrever uma poesia... Oxóssi está em tudo que é bem feito, bem acabado.</p>
+<p>Oxóssi está no sentimento de liberdade, na busca pelo conhecimento, na necessidade de ser feliz.</p>
+<p>Oxóssi é a síntese da arte de viver!</p>
+<p>Zele pela dignidade da Casa Real de Kêtu</p>
+<p>Araçá, Capim Limão, Alfavacão, Alecrim de Caboclo (agulha), Peregum Verde, Erva da Jurema, Guiné Pipiu, Abre Caminho, Erva da Fortuna, Cana do Brejo (a caninha descascada e cortada nos gomos), Pega-Pinto, Cinco Folhas, Erva Passarinho, Folha da Pitanga, Periquiteira.</p>
+<p>Coco verde. Coco seco em pedaços ou fatias (com a casca interna). Milho verde, em espigas ou debulhados. Feijão fradinho torrado. Milho amarelo (grãos inteiros) torrado. Frutas doces. Vinho moscatel. Noz moscada. Cravo da Índia. Gengibre. Dandá da Costa. Alface. Azeite de Oliva. Melado. Calda de açúcar. Açúcar mascavo ou cristal.</p>
+<p>A pedra de Oxóssi e seus significados</p>
+<p>Oxóssi, o Rei das Matas, é representado pelo Quartzo Verde. Ao utilizar essa pedra, você é capaz de atrair a fartura, a constância, o trabalho e, sobretudo, a magia. Além disso, a pedra é ótima para transmutar energia negativa e inspirar a criatividade. Suas energias protegem contra o vampirismo energético, transformam energias negativas em positivas e ajudam a atrair a prosperidade.</p>
+<p>Ofá (arco e flecha) – simbolizando o Caçador de uma única flecha, aquele que nunca erra o alvo. Paciência, sabedoria e precisão, estão inseridos nesse símbolo.</p>
+<p>Seis (6) representa a inteligência, diplomacia, rapidez de raciocínio e a prosperidade financeira.</p>
+<p>Quinta-feira – cor verde na Umbanda e azul turquesa no Candomblé.</p>
+<p>Características dos Filhos de Oxossi</p>
+<p>Os filhos de Oxossi são pessoas de aparência calma, que podem manter a mesma expressão quando alegres ou aborrecidas, do tipo que não externa suas emoções, mas não são, de forma alguma, pessoas insensíveis, só preferem guardas os sentimentos pra si.</p>
+<p>São pessoas que podem parecer prepotentes e arrogantes, e às vezes o são. Na realidade, os filhos de Oxossi são desconfiados, cautelosos, inteligentes e atentos. Selecionam muito bem as amizades, pois possuem grande dificuldade em confiar nas pessoas. Apesar de não confiarem, são pessoas confiáveis, das quais não se teme deslealdade; são incapazes de trair até um inimigo. Magoam-se com pequenas coisas e quando terminam uma amizade é pra sempre.</p>
+<p>São do tipo que ouve conselhos com atenção, respeita a opinião de todos, mas sempre faz o que quer. Com estratégia, acaba fazendo prevalecer a sua opinião e agradando a todos.</p>
+<p>Os filhos de Oxossi possuem facilidade para se mover, mesmo entre obstáculos. Seu andar possui leveza e elegância. Sua presença é sempre notada, mesmo que não façam nada para isso acontecer. Os filhos de Oxossi sempre se destacam em seu meio.</p>
+<p>Os filhos de Oxossi gostam da solidão, sempre se isolam, ficam à espreita, observam atentamente tudo que se passa à sua volta. Curiosos, percebem as coisas com rapidez, são introvertidos e discretos, vaidosos, distraídos e prestativos. Comportamentos típico de um caçador, provedor de seu povo.</p>
+<p>Na África, os caçadores, que geralmente são os únicos na aldeia que possuem armas, têm a função de salvaguardar a tribo, são chamados de Osó, que significa guardião. Oxóssi também foi Osó, mas foi um guardião especial, pois salvou seu povo do terrível pássaro das Iyá-Mi.</p>
+<p>“O reino de Ifé preparava-se para comemorar a festa dos Inhames Novos, um ritual indispensável para o início da colheita. Antes disso ninguém poderia comer desses inhames. Seu Rei, Odudua, vestiu-se com toda a pompa, cercou-se de suas mulheres e de seus ministros e ao som dos tambores, que o saudavam, foi festejar ao lado do povo. Todos comiam os inhames, bebiam o vinho de palma e festejavam alegremente.</p>
+<p>Tudo estava bem até que as Eléye, mais conhecidas como Iyá-Mi Oxorongá, proprietárias dos pássaros, mandaram uma ave gigantesca que atemorizou todo o reino, trazendo trágicas consequências.</p>
+<p>O pássaro assustador pousou no topo do palácio e a partir desse momento só houve confusão, desespero e tragédias em Ifé.</p>
+<p>Para destruir o pássaro foi chamado Òsótògún, o caçador de 20 flechas, que não obteve sucesso. Então veio Òsótogí, o caçador de 40 flechas, que também fracassou. Òsótodotá, o caçador de 50 flechas, também não foi feliz. Finalmente, foi chamado Òsótokansósó, o caçador de uma única flecha.</p>
+<p>Òsótokansósó contou com a ajuda de sua mãe que consultou um babalaô que disse:</p>
+<p>- Seu filho está a um passo da morte ou da riqueza. Faça uma oferenda e a morte se transformará em riqueza.</p>
+<p>Então, a mãe de Òsótokansósó ofereceu às Iyá-Mi, em uma estrada, uma galinha com o peito aberto, e repetiu três vezes: - Que o peito do pássaro receba esta oferenda!</p>
+<p>Nesse momento, seu filho se preparava para atirar sua flecha e quando o peito do pássaro se abriu para receber a oferenda foi atingido pela única e certeira flecha do caçador. O pássaro morreu e o povo, feliz, consagrou Òsótokansósó como Òsówusì, o guardião do povo, expressão da qual derivou o nome Oxóssi, com o qual ficou conhecido no Brasil.”</p>
+<p>Outras histórias relacionadas a Oxóssi o apontam como irmão de Ogum. Juntos, eles dominaram a floresta e levaram o homem à evolução. Além de irmão, Oxóssi é grande amigo de Ogum – dizem até que seria seu filho -, e onde está Ogum deve estar Oxóssi, suas forças se completam e, unidas, são ainda mais imbatíveis.</p>
+<p>Esses são dois exemplos dos milhares de outros que acontecem todos os dias, atingindo seguidores das religiões de matriz afro-brasileira. E não é à toa, afinal, não faltam umbandistas que se silenciam diante de tais fatos, e como se não bastasse o silêncio, ainda permitem que seguidores de outras religiões lhes imponham sua fé como sendo superior as demais.</p>
+<p>O Umbandista de fato, sabe o poder de seus Santos, o sangue que derramaram, o suor sofrido e causticante ardendo na pele preta, o fogo impiedoso das fogueiras da inquisição, a lâmina cortante e afiada das guilhotinas. O Umbandista de fato, sabe que seus ancestrais e antepassados morreram para garantir a liberdade aos seus  descendentes. Trazidos à força e amontoados nos navios negreiros, chegam ao Brasil e são obrigados a se batizarem do lado de fora das Igrejas, porque de acordo com as interpretações bíblicas, o preto era um ser sem alma, amaldiçoado...</p>
+<p>Quando um Umbandista respeita outras manifestações religiosas, não quer dizer que ele tenha que se subjugar. Os Santos da Umbanda também têm suas histórias, sua cultura, suas bênçãos e seus poderes.</p>
+<p>Seu Orixá está vivo e pulsante em você. Não deixe que o matem!</p>
+
+  </div>
+  <div class="divider">✦ ✦ ✦</div>
+  <a href="../index.html" class="back">← Voltar ao Blog</a>
+</div>
+<footer><p class="footer-logo">Conversando Sobre a Umbanda</p><p>Salve os Pretos Velhos! Salve a Umbanda! &middot; Luiz de Miranda</p></footer>
+</body></html>

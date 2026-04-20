@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Falsos Profetas · Conversando Sobre a Umbanda</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#f5f0e8;--dark:#2a1a0e;--mid:#5c3d1e;--gold:#c9943a;--gold-light:#e8c87a}
+body{background:var(--dark);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.8;overflow-x:hidden}
+header{text-align:center;padding:40px 20px 28px;border-bottom:1px solid rgba(201,148,58,.25);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.1) 0%,transparent 70%)}
+header a{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,3vw,1.8rem);color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:block;line-height:1.3}
+header p{margin-top:10px;font-size:.9rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+nav{display:flex;justify-content:center;gap:24px;padding:14px 20px;border-bottom:1px solid rgba(201,148,58,.12);flex-wrap:wrap}
+nav a{font-family:'Cinzel Decorative',serif;font-size:.6rem;color:var(--gold);text-decoration:none;letter-spacing:.15em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
+nav a:hover{opacity:1}
+.container{max-width:720px;margin:0 auto;padding:52px 24px 80px}
+.breadcrumb{font-size:.75rem;color:rgba(245,240,232,.4);margin-bottom:16px}
+.breadcrumb a{color:var(--gold);text-decoration:none;opacity:.7}
+.post-tag{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);letter-spacing:.25em;text-transform:uppercase;display:block;margin-bottom:12px}
+h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3.5vw,2.1rem);color:var(--cream);line-height:1.25;margin-bottom:18px}
+.meta{font-size:.82rem;color:rgba(245,240,232,.4);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(201,148,58,.18)}
+.meta span{color:var(--gold);opacity:.8}
+.body p{margin-bottom:24px;color:rgba(245,240,232,.85)}
+.body p:first-of-type::first-letter{font-family:'Cinzel Decorative',serif;font-size:3.8rem;float:left;line-height:.8;margin:8px 10px 0 0;color:var(--gold)}
+.back{display:inline-block;margin-top:44px;padding:10px 28px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:'Cinzel Decorative',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;transition:background .3s,color .3s}
+.back:hover{background:var(--gold);color:var(--dark)}
+footer{text-align:center;padding:44px 24px;border-top:1px solid rgba(201,148,58,.15);color:rgba(245,240,232,.3);font-size:.78rem}
+.footer-logo{font-family:'Cinzel Decorative',serif;color:var(--gold);opacity:.45;font-size:.82rem;margin-bottom:8px}
+.divider{text-align:center;color:var(--gold);opacity:.35;letter-spacing:.8em;margin:40px 0;font-size:1rem}
+/* INDEX */
+.hero{text-align:center;padding:60px 24px 48px;border-bottom:1px solid rgba(201,148,58,.2);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.12) 0%,transparent 70%)}
+.hero h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold-light);line-height:1.25;text-shadow:0 2px 30px rgba(201,148,58,.3)}
+.hero p{margin-top:14px;font-size:.95rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+.section-title{font-family:'Cinzel Decorative',serif;font-size:.68rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,148,58,.5),transparent)}
+.search{width:100%;padding:12px 16px;background:rgba(92,61,30,.2);border:1px solid rgba(201,148,58,.25);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:1rem;margin-bottom:28px;outline:none;transition:border-color .3s}
+.search:focus{border-color:rgba(201,148,58,.6)}
+.search::placeholder{color:rgba(245,240,232,.3)}
+.post-item{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid rgba(201,148,58,.1);text-decoration:none;color:inherit;transition:padding-left .2s}
+.post-item:hover .item-title{color:var(--gold)}
+.item-num{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);opacity:.35;min-width:26px;flex-shrink:0}
+.item-title{font-family:'Cinzel Decorative',serif;font-size:.75rem;color:var(--cream);line-height:1.4;flex:1;transition:color .3s}
+.item-arrow{color:var(--gold);opacity:.3;font-size:.8rem;flex-shrink:0}
+.hidden{display:none!important}
+@media(max-width:600px){.item-title{font-size:.65rem}h1{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<header><a href="../index.html">Conversando Sobre a Umbanda</a><p>Luz, fé e conhecimento para os filhos da Umbanda</p></header>
+<nav><a href="../index.html">Início</a><a href="../index.html">Todos os Posts</a></nav>
+<div class="container">
+  <p class="breadcrumb"><a href="../index.html">Início</a> › Falsos Profetas</p>
+  <h1>Falsos Profetas</h1>
+  <div class="meta"><span>Luiz de Miranda</span> · Conversando Sobre a Umbanda</div>
+  <div class="body">
+<p>Um agravante ainda se dá com a Umbanda: por ser uma religião afro-brasileira, portanto imbuída da missão de resgatar e defender a dignidade da cultura negra, vira alvo fácil tanto para os falsos profetas, como também para àqueles líderes religiosos que insistem em demonizá-la.</p>
+<p>O médium de Umbanda tem que ter em mente que a sua religião é voltada para a prática da caridade, do acolhimento, do autoconhecimento, do amor e do perdão. Como já deixou dito o anunciador da Umbanda, o Caboclo das Sete Encruzilhadas, através do seu médium Zélio Fernandino de Moraes, em 15 de novembro de 1908,” a Umbanda é a manifestação do Espírito para a prática da caridade”. Qualquer coisa que fuja desse princípio NÃO É UMBANDA.</p>
+<p>Não raro, o médium de Umbanda sempre tem que responder a uma pergunta recorrente, feita por quem nunca pisou num Terreiro: a Umbanda acredita em Deus? Nessa dúvida, fica clara a ignorância em relação a religião de Umbanda, ou pior: o mal entendimento, consequência de anos e anos de preconceito, opressão e demonização.</p>
+<p>A Umbanda resiste, levando a seus frequentadores e adeptos, mensagens de esclarecimentos e trabalhos voltados para a prática do bem e da caridade. É importante que todos que se interessem em conhecer a Umbanda fiquem atentos aos que se autointitulam pais e mães de santo, oferecendo todo tipo de “trabalho”, e com isso, se beneficiando da ingenuidade ou até da maldade alheia. Sim, pessoas más procuram pessoas más para alcançarem seus objetivos de vingança. ISSO NÃO É UMBANDA!</p>
+<p>Sabe-se bem que nem todos que se dizem Umbandistas, o são de fato: ser Umbandista não é incorporar Espíritos, é incorporar o espírito da humildade. Não é fazer amarrações amorosas, é ensinar a desfazer os nós que impedem o amor de chegar. Não é destruir um inimigo, é aprender a lidar com a adversidade. Não é separar um casal, é respeitar o amor que não é pra você. Não é tirar ninguém de um emprego, é se esforçar mais para ter seu lugar garantido. Não é conseguir clientes para sexo, mesmo que seja sua profissão, é sobre você saber conhecer seus limites e respeitar seu corpo. Não é pra saber se alguém gosta de você, é saber se você se sente amada (o). Umbanda não é para interferir no livre arbítrio de ninguém. Cuidado! Os falsos profetas sabem bem o que você quer ouvir, sabem bem como conquistar sua confiança.</p>
+<p>O exagero, a ostentação, a vaidade, a arrogância, a hipocrisia, a intolerância, a alteração de humor constantes, a chantagem, a ameaça, a soberba, a necessidade de ser elogiado (a) constantemente, fala mais em dinheiro do que em caridade: são alguns dos sentimentos que revelam um falso profeta na Umbanda.</p>
+<p>Ao ir pela primeira vez em um Terreiro, fique atento a tudo. Observe com os olhos da sua alma o que acontece ali dentro, pedindo ao seu Anjo da Guarda que esteja com você em todos os momentos, te revelando tudo que esteja oculto aos seus olhos.</p>
+<p>Estar num Terreiro de Umbanda é se sentir em paz, acolhido, esperançoso. É sentir a alma vibrar com a energia do lugar, despertando uma sensação de leveza, segurança, liberdade, desprendimento. Um lugar que nunca vai perguntar quem é você na vida, mas talvez, o que você está fazendo da sua vida. E assim, você vai entender que a Umbanda é a religião que te respeita e ensina a respeitar; que te ama e ensina a amar; que chora com você e te ensina a sorrir; que sente suas dores e te ensina a curá-las; que te vê sempre com bons olhos e te ensina a olhar pra si mesmo com amor e respeito. A Umbanda não te julga e te ensina a não julgar; não te culpa e te ensina a não se culpar, mostrando os caminhos do arrependimento que te levam a redenção plena da sua existência.</p>
+<p>Só há uma Umbanda: a que trabalha em prol do amor, da igualdade, do respeito e da caridade. Algo diferente disso, NÃO É UMBANDA!</p>
+<p>Esses são dois exemplos dos milhares de outros que acontecem todos os dias, atingindo seguidores das religiões de matriz afro-brasileira. E não é à toa, afinal, não faltam umbandistas que se silenciam diante de tais fatos, e como se não bastasse o silêncio, ainda permitem que seguidores de outras religiões lhes imponham sua fé como sendo superior as demais.</p>
+<p>O Umbandista de fato, sabe o poder de seus Santos, o sangue que derramaram, o suor sofrido e causticante ardendo na pele preta, o fogo impiedoso das fogueiras da inquisição, a lâmina cortante e afiada das guilhotinas. O Umbandista de fato, sabe que seus ancestrais e antepassados morreram para garantir a liberdade aos seus  descendentes. Trazidos à força e amontoados nos navios negreiros, chegam ao Brasil e são obrigados a se batizarem do lado de fora das Igrejas, porque de acordo com as interpretações bíblicas, o preto era um ser sem alma, amaldiçoado...</p>
+<p>Quando um Umbandista respeita outras manifestações religiosas, não quer dizer que ele tenha que se subjugar. Os Santos da Umbanda também têm suas histórias, sua cultura, suas bênçãos e seus poderes.</p>
+<p>Seu Orixá está vivo e pulsante em você. Não deixe que o matem!</p>
+
+  </div>
+  <div class="divider">✦ ✦ ✦</div>
+  <a href="../index.html" class="back">← Voltar ao Blog</a>
+</div>
+<footer><p class="footer-logo">Conversando Sobre a Umbanda</p><p>Salve os Pretos Velhos! Salve a Umbanda! &middot; Luiz de Miranda</p></footer>
+</body></html>

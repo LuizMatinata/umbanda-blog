@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>patuá · Conversando Sobre a Umbanda</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#f5f0e8;--dark:#2a1a0e;--mid:#5c3d1e;--gold:#c9943a;--gold-light:#e8c87a}
+body{background:var(--dark);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.8;overflow-x:hidden}
+header{text-align:center;padding:40px 20px 28px;border-bottom:1px solid rgba(201,148,58,.25);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.1) 0%,transparent 70%)}
+header a{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,3vw,1.8rem);color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:block;line-height:1.3}
+header p{margin-top:10px;font-size:.9rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+nav{display:flex;justify-content:center;gap:24px;padding:14px 20px;border-bottom:1px solid rgba(201,148,58,.12);flex-wrap:wrap}
+nav a{font-family:'Cinzel Decorative',serif;font-size:.6rem;color:var(--gold);text-decoration:none;letter-spacing:.15em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
+nav a:hover{opacity:1}
+.container{max-width:720px;margin:0 auto;padding:52px 24px 80px}
+.breadcrumb{font-size:.75rem;color:rgba(245,240,232,.4);margin-bottom:16px}
+.breadcrumb a{color:var(--gold);text-decoration:none;opacity:.7}
+.post-tag{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);letter-spacing:.25em;text-transform:uppercase;display:block;margin-bottom:12px}
+h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3.5vw,2.1rem);color:var(--cream);line-height:1.25;margin-bottom:18px}
+.meta{font-size:.82rem;color:rgba(245,240,232,.4);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(201,148,58,.18)}
+.meta span{color:var(--gold);opacity:.8}
+.body p{margin-bottom:24px;color:rgba(245,240,232,.85)}
+.body p:first-of-type::first-letter{font-family:'Cinzel Decorative',serif;font-size:3.8rem;float:left;line-height:.8;margin:8px 10px 0 0;color:var(--gold)}
+.back{display:inline-block;margin-top:44px;padding:10px 28px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:'Cinzel Decorative',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;transition:background .3s,color .3s}
+.back:hover{background:var(--gold);color:var(--dark)}
+footer{text-align:center;padding:44px 24px;border-top:1px solid rgba(201,148,58,.15);color:rgba(245,240,232,.3);font-size:.78rem}
+.footer-logo{font-family:'Cinzel Decorative',serif;color:var(--gold);opacity:.45;font-size:.82rem;margin-bottom:8px}
+.divider{text-align:center;color:var(--gold);opacity:.35;letter-spacing:.8em;margin:40px 0;font-size:1rem}
+/* INDEX */
+.hero{text-align:center;padding:60px 24px 48px;border-bottom:1px solid rgba(201,148,58,.2);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.12) 0%,transparent 70%)}
+.hero h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold-light);line-height:1.25;text-shadow:0 2px 30px rgba(201,148,58,.3)}
+.hero p{margin-top:14px;font-size:.95rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+.section-title{font-family:'Cinzel Decorative',serif;font-size:.68rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,148,58,.5),transparent)}
+.search{width:100%;padding:12px 16px;background:rgba(92,61,30,.2);border:1px solid rgba(201,148,58,.25);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:1rem;margin-bottom:28px;outline:none;transition:border-color .3s}
+.search:focus{border-color:rgba(201,148,58,.6)}
+.search::placeholder{color:rgba(245,240,232,.3)}
+.post-item{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid rgba(201,148,58,.1);text-decoration:none;color:inherit;transition:padding-left .2s}
+.post-item:hover .item-title{color:var(--gold)}
+.item-num{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);opacity:.35;min-width:26px;flex-shrink:0}
+.item-title{font-family:'Cinzel Decorative',serif;font-size:.75rem;color:var(--cream);line-height:1.4;flex:1;transition:color .3s}
+.item-arrow{color:var(--gold);opacity:.3;font-size:.8rem;flex-shrink:0}
+.hidden{display:none!important}
+@media(max-width:600px){.item-title{font-size:.65rem}h1{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<header><a href="../index.html">Conversando Sobre a Umbanda</a><p>Luz, fé e conhecimento para os filhos da Umbanda</p></header>
+<nav><a href="../index.html">Início</a><a href="../index.html">Todos os Posts</a></nav>
+<div class="container">
+  <p class="breadcrumb"><a href="../index.html">Início</a> › patuá</p>
+  <h1>patuá</h1>
+  <div class="meta"><span>Luiz de Miranda</span> · Conversando Sobre a Umbanda</div>
+  <div class="body">
+<p>Ninguém está livre das energias do mal. Portanto, é preciso estar atento, vigiando seus pensamentos e atitudes. Nenhum mal sobrevive onde o bem impera. E, para atrair as forças do bem, nada se faz mais necessário do que se alimentar de bons pensamentos e praticar boas atitudes.</p>
+<p>Uma pessoa honesta e sincera, que vive de acordo com o que fala e ensina, que expressa verdadeiramente seus sentimentos, estará sempre amparada pelo bem. O que não quer dizer, que estará livre do mal. Mas, terá condições para enfrentá-lo e vencê-lo.</p>
+<p>Já, aquelas pessoas que vivem em função de agradar aos outros, na espera de recompensas; que negam através de atitudes dissimuladas, seu orgulho e vaidade, se sentirão sempre perseguidas pelas vibrações do mal.</p>
+<p>Ao carregar um patuá, tenha a certeza de que está carregando um elemento que te fará mais forte e consciente da sua própria força, te abrindo um canal com a espiritualidade para seu autoconhecimento; que tudo precisa partir de você para que tudo à sua volta se mantenha em equilíbrio e harmonia.</p>
+<p>Todo mundo gosta de se sentir protegido, mas poucos sabem se proteger. Se em algum momento você se sentir vítima de uma mandinga negativa, converse com teu Orixá, acenda sua vela, tome seu banho de ervas. Inspire e expire, na certeza de que o quê te alimenta é o bem que você faz. E, fazer o bem, é antes de tudo, estar com sua consciência tranquila, honrando seus compromissos, deveres e obrigações.</p>
+<p>“Quem não pode com mandinga, não carrega patuá”: quem não tem coragem para enfrentar as adversidades, não está pronto para receber os distintivos da fé.</p>
+<p>“O patuá tem raízes nas culturas e religiões de matrizes africanas. Tradicionalmente, são saquinhos que carregam a energia do axé e a força mágica do Orixá ou de qualquer outra entidade espiritual. Dependendo da finalidade do amuleto, pode conter diferentes componentes”.( https://www.selecoes.com.br/casa-decoracao/patua)</p>
+<p>"Mandinga foi uma tribo escravizada que veio da Africa para o Brasil, e sofreu sincretismo de culturas islâmicas, e trouxeram ao a sua cultura o Alcorão, os mandingas traziam em seu pescoço um "saquinho" feito de couro com uma página do alcorão dentro(O chamado patuá). A pessoa que carregasse o patuá e se encontrassem com a tribo mandinga era questionada na língua nativa dos mandingas, se a pessoa não soubesse responder eles matavam, então daí o ditado original: "Quem não pode com os mandingas não carrega patuá".</p>
+<p>(http://legidan.blogspot.com/2012/05/mandinga.html)</p>
+<p>Esses são dois exemplos dos milhares de outros que acontecem todos os dias, atingindo seguidores das religiões de matriz afro-brasileira. E não é à toa, afinal, não faltam umbandistas que se silenciam diante de tais fatos, e como se não bastasse o silêncio, ainda permitem que seguidores de outras religiões lhes imponham sua fé como sendo superior as demais.</p>
+<p>O Umbandista de fato, sabe o poder de seus Santos, o sangue que derramaram, o suor sofrido e causticante ardendo na pele preta, o fogo impiedoso das fogueiras da inquisição, a lâmina cortante e afiada das guilhotinas. O Umbandista de fato, sabe que seus ancestrais e antepassados morreram para garantir a liberdade aos seus  descendentes. Trazidos à força e amontoados nos navios negreiros, chegam ao Brasil e são obrigados a se batizarem do lado de fora das Igrejas, porque de acordo com as interpretações bíblicas, o preto era um ser sem alma, amaldiçoado...</p>
+<p>Quando um Umbandista respeita outras manifestações religiosas, não quer dizer que ele tenha que se subjugar. Os Santos da Umbanda também têm suas histórias, sua cultura, suas bênçãos e seus poderes.</p>
+<p>Seu Orixá está vivo e pulsante em você. Não deixe que o matem!</p>
+
+  </div>
+  <div class="divider">✦ ✦ ✦</div>
+  <a href="../index.html" class="back">← Voltar ao Blog</a>
+</div>
+<footer><p class="footer-logo">Conversando Sobre a Umbanda</p><p>Salve os Pretos Velhos! Salve a Umbanda! &middot; Luiz de Miranda</p></footer>
+</body></html>

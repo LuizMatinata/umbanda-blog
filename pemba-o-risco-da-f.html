@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>PEMBA: O RISCO DA FÉ! · Conversando Sobre a Umbanda</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#f5f0e8;--dark:#2a1a0e;--mid:#5c3d1e;--gold:#c9943a;--gold-light:#e8c87a}
+body{background:var(--dark);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.8;overflow-x:hidden}
+header{text-align:center;padding:40px 20px 28px;border-bottom:1px solid rgba(201,148,58,.25);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.1) 0%,transparent 70%)}
+header a{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,3vw,1.8rem);color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:block;line-height:1.3}
+header p{margin-top:10px;font-size:.9rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+nav{display:flex;justify-content:center;gap:24px;padding:14px 20px;border-bottom:1px solid rgba(201,148,58,.12);flex-wrap:wrap}
+nav a{font-family:'Cinzel Decorative',serif;font-size:.6rem;color:var(--gold);text-decoration:none;letter-spacing:.15em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
+nav a:hover{opacity:1}
+.container{max-width:720px;margin:0 auto;padding:52px 24px 80px}
+.breadcrumb{font-size:.75rem;color:rgba(245,240,232,.4);margin-bottom:16px}
+.breadcrumb a{color:var(--gold);text-decoration:none;opacity:.7}
+.post-tag{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);letter-spacing:.25em;text-transform:uppercase;display:block;margin-bottom:12px}
+h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3.5vw,2.1rem);color:var(--cream);line-height:1.25;margin-bottom:18px}
+.meta{font-size:.82rem;color:rgba(245,240,232,.4);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(201,148,58,.18)}
+.meta span{color:var(--gold);opacity:.8}
+.body p{margin-bottom:24px;color:rgba(245,240,232,.85)}
+.body p:first-of-type::first-letter{font-family:'Cinzel Decorative',serif;font-size:3.8rem;float:left;line-height:.8;margin:8px 10px 0 0;color:var(--gold)}
+.back{display:inline-block;margin-top:44px;padding:10px 28px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:'Cinzel Decorative',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;transition:background .3s,color .3s}
+.back:hover{background:var(--gold);color:var(--dark)}
+footer{text-align:center;padding:44px 24px;border-top:1px solid rgba(201,148,58,.15);color:rgba(245,240,232,.3);font-size:.78rem}
+.footer-logo{font-family:'Cinzel Decorative',serif;color:var(--gold);opacity:.45;font-size:.82rem;margin-bottom:8px}
+.divider{text-align:center;color:var(--gold);opacity:.35;letter-spacing:.8em;margin:40px 0;font-size:1rem}
+/* INDEX */
+.hero{text-align:center;padding:60px 24px 48px;border-bottom:1px solid rgba(201,148,58,.2);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.12) 0%,transparent 70%)}
+.hero h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold-light);line-height:1.25;text-shadow:0 2px 30px rgba(201,148,58,.3)}
+.hero p{margin-top:14px;font-size:.95rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+.section-title{font-family:'Cinzel Decorative',serif;font-size:.68rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,148,58,.5),transparent)}
+.search{width:100%;padding:12px 16px;background:rgba(92,61,30,.2);border:1px solid rgba(201,148,58,.25);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:1rem;margin-bottom:28px;outline:none;transition:border-color .3s}
+.search:focus{border-color:rgba(201,148,58,.6)}
+.search::placeholder{color:rgba(245,240,232,.3)}
+.post-item{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid rgba(201,148,58,.1);text-decoration:none;color:inherit;transition:padding-left .2s}
+.post-item:hover .item-title{color:var(--gold)}
+.item-num{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);opacity:.35;min-width:26px;flex-shrink:0}
+.item-title{font-family:'Cinzel Decorative',serif;font-size:.75rem;color:var(--cream);line-height:1.4;flex:1;transition:color .3s}
+.item-arrow{color:var(--gold);opacity:.3;font-size:.8rem;flex-shrink:0}
+.hidden{display:none!important}
+@media(max-width:600px){.item-title{font-size:.65rem}h1{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<header><a href="../index.html">Conversando Sobre a Umbanda</a><p>Luz, fé e conhecimento para os filhos da Umbanda</p></header>
+<nav><a href="../index.html">Início</a><a href="../index.html">Todos os Posts</a></nav>
+<div class="container">
+  <p class="breadcrumb"><a href="../index.html">Início</a> › PEMBA: O RISCO DA FÉ!</p>
+  <h1>PEMBA: O RISCO DA FÉ!</h1>
+  <div class="meta"><span>Luiz de Miranda</span> · Conversando Sobre a Umbanda</div>
+  <div class="body">
+<p>Hoje, vamos conhecer um pouco sobre o uso da pemba:</p>
+<p>Sabe-se que a pemba e seu uso vieram com os negros bantus escravizados, trazidos para o Rio de Janeiro.</p>
+<p>Na África, só os Sacerdotes anciãos que presidiam o ritual de confecção das pembas, feitas por moças virgens, que faziam jejum absoluto por três dias, onde só o uso do cachimbo sagrado era autorizado. Nesse período, enquanto preparavam e moldavam as pembas, eram entoados cânticos em honra e agradecimento à virgem Mpemba, para que toda Sua graça e proteção abençoasse aquele trabalho, que consistia numa mistura de caulim (argila de cor branca) e pós resultantes da torra e trituração de sementes como a noz-moscada, fava de Aridan e Alibé, Dandá da Costa, Ataré (pimenta da costa), Obi e Orobô. Esta seria a pemba original, aquela que é usada para proteger as Casas e membros de uma comunidade.</p>
+<p>Outras vezes, com a pemba na mão, a Entidade pode cruzar o corpo de um filho, a fim de protegê-lo das doenças e morte mandadas. Cruzando sua cabeça, numa determinada Gira, a Entidade está fortalecendo o kamutuê (ori), para que haja uma incorporação firme. Cruzando o coração, está se pedindo para que o amor destrua toda força do mal, tal qual aconteceu com a virgem Mpemba.</p>
+<p>Sabe-se, que as pembas encontradas hoje em dia nas lojas são feitas de calcáreo, sem nenhum material considerado de fundamento para a Umbanda. No entanto, uma pemba adquirida nessas lojas, ao ser tocada por uma Entidade, se torna  uma grande condutora de energia.</p>
+<p>Lembro aqui, que a Pemba sem ser consagrada e devidamente preparada, nada mais é do que um giz. E para consagrá-la é necessário que se conheça as ervas da Entidade ou Orixá, que vai receber esta pemba.</p>
+<p>“Diz amor a Pemba, diz amor a Pemba. Firma Terreiro de meu Pai Ogum!”. Nesta curimba, exalta-se o poder da Pemba firmando e protegendo o Terreiro de Umbanda.</p>
+<p>A Pemba é um dos maiores símbolos, se não, o maior símbolo da Umbanda; pois ela representa a resistência dos perseguidos e marginalizados. A lenda da sua criação nos remete ao poder do amor desfazendo o ódio, o bem garantindo a harmonia e a felicidade. De formato cônico arredondado, representa ainda a ligação entre o mundo espiritual e o material.</p>
+<p>Conhecer a Lenda da Mpemba é importante para entender o poder desse objeto nos rituais de Umbanda.</p>
+<p>“A origem do nome, Pemba, vem da lenda africana referente ao monte Kabanda e as águas do rio Usil, tidos como sagrados pelas tribos Bacongo e Congo.”</p>
+<p>Em um dos muitos lugares da África há muito tempo existiam vários montes formados de um pó branco, esses montes ficaram conhecidos como montes kabanda. Aos pés dos montes Kabanda banhados pelo rio sagrado surgiram várias aldeias que viriam a formar o reino de sobá Liutabi um homem forte corajoso que reinava com grande autoridade. Os homens e as mulheres da aldeia trabalhavam bastante pelo bem de todos e pelo bem coletivo. Logo pela manhã, algumas pessoas iam para a machamba (roça onde era plantado o milho a mandioca o inhame e o feijão). Enquanto as outras pessoas pescavam ou apanhavam água do rio sagrado. Entre essas pessoas estava a filha do rei, uma linda moça chamada Mipemba ou Npmeba) muito querida pelos habitantes das aldeias. Mipemba era gentil e alegre espalhava o amor e a felicidade a todos que conviviam com ela. Era também dona de beleza incrível, os cabelos faziam uma moldura no seu rosto negro, e como um jamelão, seus olhos eram brilhantes como estrelas.</p>
+<p>Justamente por ser tão linda e encantadora, seu destino era ser preservada em homenagem aos ancestrais que regiam e protegiam o reino Liutabi.  Mipemba costumava trabalhar com as outras mulheres na produção de potes de barro que armazenavam a água e os alimentos. Todas as tardes após terminar o seu trabalho ia se banhar no rio sagrado. Certa tarde um jovem viajante seguia pelas margens do rio sagrado quando avistou Mipemba. Sentiu-se maravilhado com tamanha beleza e nesse mesmo instante Mipemba sentindo-se observada, percorreu a margem do rio com seus olhos de estrelas. Sem nada avistar, não sentiu medo e sim um suave calor no coração. O jovem seguiu seu caminho e ao chegar na entrada de uma das aldeias do reino de Liutabi foi recepcionado por um grupo de crianças. Ainda maravilhado com a beleza de Mipemba descreveu a moça e perguntou as crianças se sabiam de quem se tratava. Uma das crianças lhe revelou que a dona de tal beleza e encanto era filha do rei prometida aos ancestrais. Decepcionado, o jovem apaixonado se contentou em apenas observá-la a beira do rio todas as tardes, escondido sem se revelar. Nos dias que se sucederam quando se banhava no rio sagrado, Mipemba sentia aquele calor no coração, porém nada avistava. Certa manhã, disposta a esclarecer o mistério, Mipemba não foi diretamente ao rio; ela deu a volta pela floresta e avistou o jovem viajante. Seus olhares se encontraram e nesse momento o calor que Mipemba sentia no coração tomou todo seu corpo e ela percebeu-se apaixonada. Sabendo da impossibilidade desse amor, num misto de infelicidade e sofrimento, o encontro dos seus olhos selaram um pacto de fidelidade. Todos os dias Mipemba ansiava pelo fim da tarde pois sabia que o jovem forasteiro lá estaria a observando, fazendo-a sentir aquele calor no coração. Depois de certo tempo o jovem não mais contente de apenas observá-la, decidiu declarar ao rei o amor que sentia por sua filha. Ao ouvir o jovem, o rei ficou furioso e ordenou que partisse imediatamente dizendo-lhe que se descumprisse sua ordem seria atirado aos crocodilos que moravam no rio sagrado.</p>
+<p>Entretanto, a força do amor era maior que o temor que poderiam sentir. Mipemba e o jovem resolveram se encontrar pela última vez sob a luz do luar antes da partida.</p>
+<p>Nessa noite quando a aldeia se aquietou e todos dormiram, Mipemba dirigiu-se ao rio para o último encontro com seu amado. O que ela não imaginava é que o rei que se preocupava com o destino do povo das aldeias, caso as promessas feitas aos ancestrais fosse descumprida, havia ordenado aos guerreiros que seguissem os passos da filha. Quando os guerreiros chegaram às margens do rio sagrado avistaram Mipemba que tinha um ar de felicidade enquanto se banhava. Desconfiados, eles vasculharam as margens do rio e surpreenderam o jovem. Imediatamente cumpriram a ordem do rei, degolaram o rapaz e lançaram seu corpo no rio sagrado para que os crocodilos o devorassem Mipemba ao saber do acontecido desesperou-se de tal maneira que se lançou aos pés dos montes Kabanda e esfregou seu corpo e seu rosto com aquele pó na tentativa de sentir uma dor que superasse a ausência de seu primeiro amor. Porém, nada adiantou e na esperança de sentir novamente o calor do amor em seu coração foi banhar-se no rio sagrado. Por um milagre, Orunmilá, a divindade responsável pelo portal do destino apiedou-se de Mipemba e ordenou que os ancestrais protetores do reino a recolhessem. Os guerreiros assistiram assombrados quando o corpo de Mipemba ao mesmo tempo que se elevava em direção aos céus, transformou-se em pó. E esse pó ao atingir as águas do rio sagrado formavam uma grande massa branca. Enquanto um dos guerreiros sagrados correu para avisar o rei, os outros na tentativa de apanhá-la tiveram suas mãos e corpos ungidos pela massa branca formada pelo corpo de Mipemba. Quando o rei acompanhado por uma multidão chegou e viu o que estava acontecendo, partiu furioso para punir os guerreiros. Um deles na tentativa de se defender tocou seu corpo com as mãos ungidas pela massa branca. Nesse momento a ira do rei se esvaiu, foi toda embora e ele não castigou os guerreiros. As pessoas que assistiram a cena perceberam que aquela massa branca formada pelo corpo de Mipemba e a água do rio sagrado traziam o bem. A partir de então, tornou-se tradição passá-la nas casas, nos corpos e nos objetos, para afastar o mal e atrair o amor, a felicidade e a harmonia. A fama dos efeitos da massa branca deixada por Mipemba se espalhou de geração e geração entre os povos de várias partes da África. Hoje, conhecida apenas como pemba e usada em ocasiões importantes, essa crença atravessou o oceano atlântico, chegou no Brasil e está viva até hoje.</p>
+<p>(Lenda transcrita do Livro A Lenda da Pemba de Marcia Regina da Silva)</p>
+<p>Esses são dois exemplos dos milhares de outros que acontecem todos os dias, atingindo seguidores das religiões de matriz afro-brasileira. E não é à toa, afinal, não faltam umbandistas que se silenciam diante de tais fatos, e como se não bastasse o silêncio, ainda permitem que seguidores de outras religiões lhes imponham sua fé como sendo superior as demais.</p>
+<p>O Umbandista de fato, sabe o poder de seus Santos, o sangue que derramaram, o suor sofrido e causticante ardendo na pele preta, o fogo impiedoso das fogueiras da inquisição, a lâmina cortante e afiada das guilhotinas. O Umbandista de fato, sabe que seus ancestrais e antepassados morreram para garantir a liberdade aos seus  descendentes. Trazidos à força e amontoados nos navios negreiros, chegam ao Brasil e são obrigados a se batizarem do lado de fora das Igrejas, porque de acordo com as interpretações bíblicas, o preto era um ser sem alma, amaldiçoado...</p>
+<p>Quando um Umbandista respeita outras manifestações religiosas, não quer dizer que ele tenha que se subjugar. Os Santos da Umbanda também têm suas histórias, sua cultura, suas bênçãos e seus poderes.</p>
+<p>Seu Orixá está vivo e pulsante em você. Não deixe que o matem!</p>
+
+  </div>
+  <div class="divider">✦ ✦ ✦</div>
+  <a href="../index.html" class="back">← Voltar ao Blog</a>
+</div>
+<footer><p class="footer-logo">Conversando Sobre a Umbanda</p><p>Salve os Pretos Velhos! Salve a Umbanda! &middot; Luiz de Miranda</p></footer>
+</body></html>

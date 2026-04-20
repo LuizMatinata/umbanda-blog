@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>OGUM ESTÁ ENTRE NÓS! · Conversando Sobre a Umbanda</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#f5f0e8;--dark:#2a1a0e;--mid:#5c3d1e;--gold:#c9943a;--gold-light:#e8c87a}
+body{background:var(--dark);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.8;overflow-x:hidden}
+header{text-align:center;padding:40px 20px 28px;border-bottom:1px solid rgba(201,148,58,.25);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.1) 0%,transparent 70%)}
+header a{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,3vw,1.8rem);color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:block;line-height:1.3}
+header p{margin-top:10px;font-size:.9rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+nav{display:flex;justify-content:center;gap:24px;padding:14px 20px;border-bottom:1px solid rgba(201,148,58,.12);flex-wrap:wrap}
+nav a{font-family:'Cinzel Decorative',serif;font-size:.6rem;color:var(--gold);text-decoration:none;letter-spacing:.15em;text-transform:uppercase;opacity:.75;transition:opacity .3s}
+nav a:hover{opacity:1}
+.container{max-width:720px;margin:0 auto;padding:52px 24px 80px}
+.breadcrumb{font-size:.75rem;color:rgba(245,240,232,.4);margin-bottom:16px}
+.breadcrumb a{color:var(--gold);text-decoration:none;opacity:.7}
+.post-tag{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);letter-spacing:.25em;text-transform:uppercase;display:block;margin-bottom:12px}
+h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3.5vw,2.1rem);color:var(--cream);line-height:1.25;margin-bottom:18px}
+.meta{font-size:.82rem;color:rgba(245,240,232,.4);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(201,148,58,.18)}
+.meta span{color:var(--gold);opacity:.8}
+.body p{margin-bottom:24px;color:rgba(245,240,232,.85)}
+.body p:first-of-type::first-letter{font-family:'Cinzel Decorative',serif;font-size:3.8rem;float:left;line-height:.8;margin:8px 10px 0 0;color:var(--gold)}
+.back{display:inline-block;margin-top:44px;padding:10px 28px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:'Cinzel Decorative',serif;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;transition:background .3s,color .3s}
+.back:hover{background:var(--gold);color:var(--dark)}
+footer{text-align:center;padding:44px 24px;border-top:1px solid rgba(201,148,58,.15);color:rgba(245,240,232,.3);font-size:.78rem}
+.footer-logo{font-family:'Cinzel Decorative',serif;color:var(--gold);opacity:.45;font-size:.82rem;margin-bottom:8px}
+.divider{text-align:center;color:var(--gold);opacity:.35;letter-spacing:.8em;margin:40px 0;font-size:1rem}
+/* INDEX */
+.hero{text-align:center;padding:60px 24px 48px;border-bottom:1px solid rgba(201,148,58,.2);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.12) 0%,transparent 70%)}
+.hero h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold-light);line-height:1.25;text-shadow:0 2px 30px rgba(201,148,58,.3)}
+.hero p{margin-top:14px;font-size:.95rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
+.section-title{font-family:'Cinzel Decorative',serif;font-size:.68rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,148,58,.5),transparent)}
+.search{width:100%;padding:12px 16px;background:rgba(92,61,30,.2);border:1px solid rgba(201,148,58,.25);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:1rem;margin-bottom:28px;outline:none;transition:border-color .3s}
+.search:focus{border-color:rgba(201,148,58,.6)}
+.search::placeholder{color:rgba(245,240,232,.3)}
+.post-item{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid rgba(201,148,58,.1);text-decoration:none;color:inherit;transition:padding-left .2s}
+.post-item:hover .item-title{color:var(--gold)}
+.item-num{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);opacity:.35;min-width:26px;flex-shrink:0}
+.item-title{font-family:'Cinzel Decorative',serif;font-size:.75rem;color:var(--cream);line-height:1.4;flex:1;transition:color .3s}
+.item-arrow{color:var(--gold);opacity:.3;font-size:.8rem;flex-shrink:0}
+.hidden{display:none!important}
+@media(max-width:600px){.item-title{font-size:.65rem}h1{font-size:1.2rem}}
+</style>
+</head>
+<body>
+<header><a href="../index.html">Conversando Sobre a Umbanda</a><p>Luz, fé e conhecimento para os filhos da Umbanda</p></header>
+<nav><a href="../index.html">Início</a><a href="../index.html">Todos os Posts</a></nav>
+<div class="container">
+  <p class="breadcrumb"><a href="../index.html">Início</a> › OGUM ESTÁ ENTRE NÓS!</p>
+  <h1>OGUM ESTÁ ENTRE NÓS!</h1>
+  <div class="meta"><span>Luiz de Miranda</span> · Conversando Sobre a Umbanda</div>
+  <div class="body">
+<p>Enquanto o primeiro nasce na Capadócia, na Turquia no ano 275 d.C. e no dia 23 de abril de 303 é degolado por ordem do Imperador Diocleciano, por se negar a abandonar a fé cristã; o segundo, é de origem nagô e de acordo com a teologia iorubá, Ogum foi o primeiro Orixá a descer do orun (céu) para o Ile Ifé, a Terra primordial, com a missão de estabelecer os limites entre as criações e criar condições favoráveis para a evolução da humanidade.</p>
+<p>É compreensível e admirável a presença maciça de seguidores da Umbanda e Candomblé pelas ruas no dia 23 de abril. Afinal, é uma maneira de agradecer aos antepassados pela capacidade de manterem viva a história de Ogum, mesmo que através do sincretismo religioso.</p>
+<p>Ogum traz consigo então o ferro e ensina ao povo que vivia na Terra a forjar o metal. Nessa época havia grande escassez de alimentos por conta do aumento da população e a dificuldade de realizar o plantio, que à época, ainda era feito com instrumentos de madeira e pedra. Dessa forma, Ogum se faz conhecido como o Senhor da tecnologia: aquele que abre caminhos para dar ao homem mais conforto e facilidades.</p>
+<p>Com a chegada do ferro, além das ferramentas agrícolas, Ogum traz também as armas de guerra e ensina seu povo a manuseá-las para defender seus territórios. E Ogum é aclamado como o Senhor da guerra: aquele que guerreia pela paz e pela garantia dos direitos de cada ser humano. Ogum não descansa sobre suas armas, pois está sempre ensinando a cada um de nós a necessidade da luta para a conquista de nossos objetivos. Ogum guerreia para garantir a ordem e a disciplina. Ninguém vence na vida se não for um bom guerreiro.</p>
+<p>Ogum está na abertura de estradas, na fabricação de carros e máquinas agrícolas, no fio afiado da navalha do barbeiro, nas engrenagens que fazem girar os grandes e pequenos motores, na precisão e força do homem que bate o martelo sobre a bigorna para malhar e forjar os metais.</p>
+<p>Ogum está no empunhar da espada pelo braço forte do homem justo, determinando os limites de cada um e anunciando os tempos de lutas e glórias contra toda opressão e covardia. Ogum nunca abandona o campo de batalha.</p>
+<p>Ogum está no sangue que corre nas veias.</p>
+<p>Ogum está nos limites das emoções e sentimentos.</p>
+<p>Onde o homem desiste, Ogum resiste. Nada é capaz de parar Ogum.</p>
+<p>Na Umbanda, através de seus Falangeiros, Ogum deixa claro os limites entre os reinos da natureza, dentre Eles:</p>
+<p>Ogum Beira Mar: está no limite entre o mar e a areia. O guardião do reino de Yemanjá.</p>
+<p>Ogum Sete Espadas: está nos limites que dividem cidades e municípios. O grande sentinela da Umbanda, atuando também nos limites da entrada do Terreiro.</p>
+<p>Ogum Rompe-Mato: está nos limites que separam as estradas, das matas. O guardião do reino de Oxóssi.</p>
+<p>Ogum Yara: está entre as matas e os rios. Guardião do reino de Oxum.</p>
+<p>Ogum 7 Ondas: está no limite do mar, onde as ondas são formadas. É este Ogum que leva as oferendas oferecidas pelos fiéis, à Mãe Iemanjá.</p>
+<p>Ogum Matinata: está nos limites do alvorecer. Guardião das oferendas de Oxalá.</p>
+<p>Ogum Megê: o Senhor dos limites entre o mundo dos vivos e dos mortos. O guardião do Campo Santo (cemitério) e de todos os portais que permitem a comunicação dos espíritos desencarnados com os encarnados. Atua para ensinar aos homens o manuseio das “ferramentas espirituais” para sua evolução. Evocado para auxiliar na cura de doenças de ordem emocional e afetiva.</p>
+<p>Ogum: o Orixá que no empunhar da sua espada determina a ordem e a disciplina, dissipando através da luz que dela irradia, as energias do mal. Ogum sempre nos diz: “não tenha medo de lutar por seus objetivos, Eu estarei sempre à sua frente!”</p>
+<p>Por hoje e sempre, louvemos o poder de Ogum. Ele está entre nós!</p>
+<p>Esses são dois exemplos dos milhares de outros que acontecem todos os dias, atingindo seguidores das religiões de matriz afro-brasileira. E não é à toa, afinal, não faltam umbandistas que se silenciam diante de tais fatos, e como se não bastasse o silêncio, ainda permitem que seguidores de outras religiões lhes imponham sua fé como sendo superior as demais.</p>
+<p>O Umbandista de fato, sabe o poder de seus Santos, o sangue que derramaram, o suor sofrido e causticante ardendo na pele preta, o fogo impiedoso das fogueiras da inquisição, a lâmina cortante e afiada das guilhotinas. O Umbandista de fato, sabe que seus ancestrais e antepassados morreram para garantir a liberdade aos seus  descendentes. Trazidos à força e amontoados nos navios negreiros, chegam ao Brasil e são obrigados a se batizarem do lado de fora das Igrejas, porque de acordo com as interpretações bíblicas, o preto era um ser sem alma, amaldiçoado...</p>
+<p>Quando um Umbandista respeita outras manifestações religiosas, não quer dizer que ele tenha que se subjugar. Os Santos da Umbanda também têm suas histórias, sua cultura, suas bênçãos e seus poderes.</p>
+<p>Seu Orixá está vivo e pulsante em você. Não deixe que o matem!</p>
+
+  </div>
+  <div class="divider">✦ ✦ ✦</div>
+  <a href="../index.html" class="back">← Voltar ao Blog</a>
+</div>
+<footer><p class="footer-logo">Conversando Sobre a Umbanda</p><p>Salve os Pretos Velhos! Salve a Umbanda! &middot; Luiz de Miranda</p></footer>
+</body></html>
