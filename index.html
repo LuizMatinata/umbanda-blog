@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--cream:#f5f0e8;--dark:#2a1a0e;--mid:#5c3d1e;--gold:#c9943a;--gold-light:#e8c87a}
+:root{--cream:#f5f0e8;--dark:#2a1a0e;--gold:#c9943a;--gold-light:#e8c87a}
 body{background:var(--dark);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:19px;line-height:1.8;overflow-x:hidden}
 header{text-align:center;padding:40px 20px 28px;border-bottom:1px solid rgba(201,148,58,.25);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.1) 0%,transparent 70%)}
 header a{font-family:'Cinzel Decorative',serif;font-size:clamp(1.1rem,3vw,1.8rem);color:var(--gold-light);text-decoration:none;letter-spacing:.05em;display:block;line-height:1.3}
@@ -16,7 +16,6 @@ nav a:hover{opacity:1}
 .container{max-width:720px;margin:0 auto;padding:52px 24px 80px}
 .breadcrumb{font-size:.75rem;color:rgba(245,240,232,.4);margin-bottom:16px}
 .breadcrumb a{color:var(--gold);text-decoration:none;opacity:.7}
-.post-tag{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);letter-spacing:.25em;text-transform:uppercase;display:block;margin-bottom:12px}
 h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3.5vw,2.1rem);color:var(--cream);line-height:1.25;margin-bottom:18px}
 .meta{font-size:.82rem;color:rgba(245,240,232,.4);margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid rgba(201,148,58,.18)}
 .meta span{color:var(--gold);opacity:.8}
@@ -26,25 +25,23 @@ h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.3rem,3.5vw,2.1rem);co
 .back:hover{background:var(--gold);color:var(--dark)}
 footer{text-align:center;padding:44px 24px;border-top:1px solid rgba(201,148,58,.15);color:rgba(245,240,232,.3);font-size:.78rem}
 .footer-logo{font-family:'Cinzel Decorative',serif;color:var(--gold);opacity:.45;font-size:.82rem;margin-bottom:8px}
-.divider{text-align:center;color:var(--gold);opacity:.35;letter-spacing:.8em;margin:40px 0;font-size:1rem}
-/* INDEX */
+.divider{text-align:center;color:var(--gold);opacity:.35;letter-spacing:.8em;margin:40px 0}
 .hero{text-align:center;padding:60px 24px 48px;border-bottom:1px solid rgba(201,148,58,.2);background:radial-gradient(ellipse at 50% 0%,rgba(201,148,58,.12) 0%,transparent 70%)}
 .hero h1{font-family:'Cinzel Decorative',serif;font-size:clamp(1.6rem,5vw,3rem);color:var(--gold-light);line-height:1.25;text-shadow:0 2px 30px rgba(201,148,58,.3)}
 .hero p{margin-top:14px;font-size:.95rem;color:rgba(245,240,232,.5);font-style:italic;letter-spacing:.1em}
-.section-title{font-family:'Cinzel Decorative',serif;font-size:.68rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px}
-.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,148,58,.5),transparent)}
-.search{width:100%;padding:12px 16px;background:rgba(92,61,30,.2);border:1px solid rgba(201,148,58,.25);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:1rem;margin-bottom:28px;outline:none;transition:border-color .3s}
+.sec{font-family:'Cinzel Decorative',serif;font-size:.68rem;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px}
+.sec::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,148,58,.5),transparent)}
+.search{width:100%;padding:12px 16px;background:rgba(92,61,30,.2);border:1px solid rgba(201,148,58,.25);color:var(--cream);font-family:'Crimson Pro',Georgia,serif;font-size:1rem;margin-bottom:28px;outline:none}
 .search:focus{border-color:rgba(201,148,58,.6)}
 .search::placeholder{color:rgba(245,240,232,.3)}
-.post-item{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid rgba(201,148,58,.1);text-decoration:none;color:inherit;transition:padding-left .2s}
+.post-item{display:flex;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid rgba(201,148,58,.1);text-decoration:none;color:inherit}
 .post-item:hover .item-title{color:var(--gold)}
 .item-num{font-family:'Cinzel Decorative',serif;font-size:.58rem;color:var(--gold);opacity:.35;min-width:26px;flex-shrink:0}
 .item-title{font-family:'Cinzel Decorative',serif;font-size:.75rem;color:var(--cream);line-height:1.4;flex:1;transition:color .3s}
 .item-arrow{color:var(--gold);opacity:.3;font-size:.8rem;flex-shrink:0}
 .hidden{display:none!important}
 @media(max-width:600px){.item-title{font-size:.65rem}h1{font-size:1.2rem}}
-</style>
-</head>
+</style></head>
 <body>
 <div class="hero">
   <div style="font-family:'Cinzel Decorative',serif;color:var(--gold);opacity:.6;letter-spacing:.5em;font-size:.9rem;margin-bottom:16px">✦ ✦ ✦</div>
@@ -53,116 +50,116 @@ footer{text-align:center;padding:44px 24px;border-top:1px solid rgba(201,148,58,
 </div>
 <nav><a href="index.html">Início</a><a href="index.html">Todos os Posts</a></nav>
 <div class="container" style="max-width:900px">
-  <p class="section-title">Todos os Artigos &mdash; 103 publicações</p>
+  <p class="sec">Todos os Artigos &mdash; 103 publicações</p>
   <input class="search" type="text" placeholder="Buscar artigo..." oninput="filtrar(this.value)"/>
-  <div id="lista"><a class="post-item" href="posts/o-jogo-de-b-zios-na-umbanda.html"><span class="item-num">01</span><span class="item-title">O JOGO DE BÚZIOS NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/cuia-coit-caba-a-utens-lios-ancestrais.html"><span class="item-num">02</span><span class="item-title">CUIA, COITÉ, CABAÇA: utensílios ancestrais. CUIA, COITÉ, CABAÇA: utensílios ancestrais.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/falsosprofetasnaumbanda.html"><span class="item-num">03</span><span class="item-title">Falsos Profetas</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-poder-das-ervas-de-xang.html"><span class="item-num">04</span><span class="item-title">BANHOS DE DESCARREGOO PODER DAS ERVAS DE XANGÔ O PODER DAS ERVAS DE XANGÔ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/pretos-velhos-a-alma-da-umbanda.html"><span class="item-num">05</span><span class="item-title">BANHOS DE DESCARREGOPRETOS-VELHOS: A ALMA DA UMBANDA PRETOS-VELHOS: A ALMA DA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/simpatias-e-encantamentos-no-ax-das-ibejadas.html"><span class="item-num">06</span><span class="item-title">SIMPATIAS E ENCANTAMENTOS NO AXÉ DAS IBEJADAS.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/maria-mulambo-da-lixeira.html"><span class="item-num">07</span><span class="item-title">MARIA MULAMBO DA LIXEIRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/n-o-me-chamem-de-diabo-eu-sou-exu.html"><span class="item-num">08</span><span class="item-title">Não me chamem de diabo. Eu sou Exu!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ogum-est-entre-n-s.html"><span class="item-num">09</span><span class="item-title">OGUM ESTÁ ENTRE NÓS!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/orix-s-e-entidades-incorporam-em-igrejas.html"><span class="item-num">10</span><span class="item-title">Orixás e Entidades incorporam em Igrejas?</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/a-pipoca-na-umbanda.html"><span class="item-num">11</span><span class="item-title">A PIPOCA NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ervas-para-o-orix-ogum.html"><span class="item-num">12</span><span class="item-title">Ervas para o Orixá Ogum</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/xang-rei-justi-a-equil-brio.html"><span class="item-num">13</span><span class="item-title">Xangô; o Rei da Umbanda</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-cachimbo-do-preto-velho.html"><span class="item-num">14</span><span class="item-title">O CACHIMBO DO PRETO VELHO</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/t.html"><span class="item-num">15</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/banho-da-ter-a-feira-para-vencer-demandas.html"><span class="item-num">16</span><span class="item-title">BANHO DA TERÇA-FEIRA PARA VENCER DEMANDAS.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/pontos-riscados.html"><span class="item-num">17</span><span class="item-title">BANHOS DE DESCARREGOPONTOS RISCADOS PONTOS RISCADOS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/jesus-cristo-n-o-tem-religi-o.html"><span class="item-num">18</span><span class="item-title">Jesus Cristo</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/robots.html"><span class="item-num">19</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/a-import-ncia-do-negro-na-forma-o-da-sociedade-brasileira.html"><span class="item-num">20</span><span class="item-title">A IMPORTÂNCIA DO NEGRO NA FORMAÇÃO DA SOCIEDADE BRASILEIRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/pomba-branca-o-s-mbolo-da-pureza-e-confirma-o-na-umbanda.html"><span class="item-num">21</span><span class="item-title">POMBA BRANCA: O SÍMBOLO DA PUREZA E CONFIRMAÇÃO NA UMBANDA
+  <div id="lista"><a class="post-item" href="o-jogo-de-b-zios-na-umbanda.html"><span class="item-num">01</span><span class="item-title">O JOGO DE BÚZIOS NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="cuia-coit-caba-a-utens-lios-ancestrais.html"><span class="item-num">02</span><span class="item-title">CUIA, COITÉ, CABAÇA: utensílios ancestrais. CUIA, COITÉ, CABAÇA: utensílios ancestrais.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="falsosprofetasnaumbanda.html"><span class="item-num">03</span><span class="item-title">Falsos Profetas</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-poder-das-ervas-de-xang.html"><span class="item-num">04</span><span class="item-title">BANHOS DE DESCARREGOO PODER DAS ERVAS DE XANGÔ O PODER DAS ERVAS DE XANGÔ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="pretos-velhos-a-alma-da-umbanda.html"><span class="item-num">05</span><span class="item-title">BANHOS DE DESCARREGOPRETOS-VELHOS: A ALMA DA UMBANDA PRETOS-VELHOS: A ALMA DA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="simpatias-e-encantamentos-no-ax-das-ibejadas.html"><span class="item-num">06</span><span class="item-title">SIMPATIAS E ENCANTAMENTOS NO AXÉ DAS IBEJADAS.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="maria-mulambo-da-lixeira.html"><span class="item-num">07</span><span class="item-title">MARIA MULAMBO DA LIXEIRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="n-o-me-chamem-de-diabo-eu-sou-exu.html"><span class="item-num">08</span><span class="item-title">Não me chamem de diabo. Eu sou Exu!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ogum-est-entre-n-s.html"><span class="item-num">09</span><span class="item-title">OGUM ESTÁ ENTRE NÓS!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="orix-s-e-entidades-incorporam-em-igrejas.html"><span class="item-num">10</span><span class="item-title">Orixás e Entidades incorporam em Igrejas?</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="a-pipoca-na-umbanda.html"><span class="item-num">11</span><span class="item-title">A PIPOCA NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ervas-para-o-orix-ogum.html"><span class="item-num">12</span><span class="item-title">Ervas para o Orixá Ogum</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="xang-rei-justi-a-equil-brio.html"><span class="item-num">13</span><span class="item-title">Xangô; o Rei da Umbanda</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-cachimbo-do-preto-velho.html"><span class="item-num">14</span><span class="item-title">O CACHIMBO DO PRETO VELHO</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="t.html"><span class="item-num">15</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="banho-da-ter-a-feira-para-vencer-demandas.html"><span class="item-num">16</span><span class="item-title">BANHO DA TERÇA-FEIRA PARA VENCER DEMANDAS.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="pontos-riscados.html"><span class="item-num">17</span><span class="item-title">BANHOS DE DESCARREGOPONTOS RISCADOS PONTOS RISCADOS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="jesus-cristo-n-o-tem-religi-o.html"><span class="item-num">18</span><span class="item-title">Jesus Cristo</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="robots.html"><span class="item-num">19</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="a-import-ncia-do-negro-na-forma-o-da-sociedade-brasileira.html"><span class="item-num">20</span><span class="item-title">A IMPORTÂNCIA DO NEGRO NA FORMAÇÃO DA SOCIEDADE BRASILEIRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="pomba-branca-o-s-mbolo-da-pureza-e-confirma-o-na-umbanda.html"><span class="item-num">21</span><span class="item-title">POMBA BRANCA: O SÍMBOLO DA PUREZA E CONFIRMAÇÃO NA UMBANDA
 Pombo preto: magias negativas. Pombo Cor de chumbo: problemas financeiros. Pombo malhado preto/branco: pragas e feitiços</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/azeite-de-dend-fonte-de-vida-e-ax.html"><span class="item-num">22</span><span class="item-title">AZEITE DE DENDÊ: FONTE DE VIDA E AXÉ! AZEITE DE DENDÊ: FONTE DE VIDA E AXÉ!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/a-esteira-de-palha-o-reencontro-com-a-ancestralidade.html"><span class="item-num">23</span><span class="item-title">A ESTEIRA DE PALHA: O REENCONTRO COM A ANCESTRALIDADE.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/defuma-o-limpeza-e-prote-o.html"><span class="item-num">24</span><span class="item-title">DEFUMAÇÃO: LIMPEZA E PROTEÇÃO.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ervas-e-folhas-consagradas-a-exu.html"><span class="item-num">25</span><span class="item-title">FOLHAS CONSAGRADAS A EXU</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/13-de-maio-luta-e-resist-ncia-do-povo-negro.html"><span class="item-num">26</span><span class="item-title">13 de MAIO: LUTA E RESISTÊNCIA DO POVO NEGRO!O preto não quer ser mais que o branco. Mas também não quer que o branco se ache mais que o preto.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/a-inveja.html"><span class="item-num">27</span><span class="item-title">A INVEJA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/2024-o-ano-do-acerto-de-contas.html"><span class="item-num">28</span><span class="item-title">2024: O ANO DO ACERTO DE CONTAS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/as-frutas-do-ano-de-2026.html"><span class="item-num">29</span><span class="item-title">AS FRUTAS DO ANO DE 2026</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/os-ibejis-na-vida-humana.html"><span class="item-num">30</span><span class="item-title">A vida humana dos Ibejis</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/malandrinho-na-umbanda.html"><span class="item-num">31</span><span class="item-title">MALANDRINHO NA UMBANDA: reza e oferendas</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/quinta-feira-dia-de-louvar-ox-ssi.html"><span class="item-num">32</span><span class="item-title">Oxóssi: Orixá do conhecimento</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/n-o-basta-ter-f-preciso-ter-amor.html"><span class="item-num">33</span><span class="item-title">BANHOS DE DESCARREGONÃO BASTA TER FÉ, É PRECISO TER AMOR NÃO BASTA TER FÉ, É PRECISO TER AMOR</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/as-crian-as-da-umbanda.html"><span class="item-num">34</span><span class="item-title">AS CRIANÇAS DA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/os-cambonos-da-umbanda.html"><span class="item-num">35</span><span class="item-title">OS CAMBONOS DA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/linha-dos-baianos-na-umbanda.html"><span class="item-num">36</span><span class="item-title">OS BAIANOS NA UMBANDA
+<a class="post-item" href="azeite-de-dend-fonte-de-vida-e-ax.html"><span class="item-num">22</span><span class="item-title">AZEITE DE DENDÊ: FONTE DE VIDA E AXÉ! AZEITE DE DENDÊ: FONTE DE VIDA E AXÉ!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="a-esteira-de-palha-o-reencontro-com-a-ancestralidade.html"><span class="item-num">23</span><span class="item-title">A ESTEIRA DE PALHA: O REENCONTRO COM A ANCESTRALIDADE.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="defuma-o-limpeza-e-prote-o.html"><span class="item-num">24</span><span class="item-title">DEFUMAÇÃO: LIMPEZA E PROTEÇÃO.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ervas-e-folhas-consagradas-a-exu.html"><span class="item-num">25</span><span class="item-title">FOLHAS CONSAGRADAS A EXU</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="13-de-maio-luta-e-resist-ncia-do-povo-negro.html"><span class="item-num">26</span><span class="item-title">13 de MAIO: LUTA E RESISTÊNCIA DO POVO NEGRO!O preto não quer ser mais que o branco. Mas também não quer que o branco se ache mais que o preto.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="a-inveja.html"><span class="item-num">27</span><span class="item-title">A INVEJA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="2024-o-ano-do-acerto-de-contas.html"><span class="item-num">28</span><span class="item-title">2024: O ANO DO ACERTO DE CONTAS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="as-frutas-do-ano-de-2026.html"><span class="item-num">29</span><span class="item-title">AS FRUTAS DO ANO DE 2026</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="os-ibejis-na-vida-humana.html"><span class="item-num">30</span><span class="item-title">A vida humana dos Ibejis</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="malandrinho-na-umbanda.html"><span class="item-num">31</span><span class="item-title">MALANDRINHO NA UMBANDA: reza e oferendas</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="quinta-feira-dia-de-louvar-ox-ssi.html"><span class="item-num">32</span><span class="item-title">Oxóssi: Orixá do conhecimento</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="n-o-basta-ter-f-preciso-ter-amor.html"><span class="item-num">33</span><span class="item-title">BANHOS DE DESCARREGONÃO BASTA TER FÉ, É PRECISO TER AMOR NÃO BASTA TER FÉ, É PRECISO TER AMOR</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="as-crian-as-da-umbanda.html"><span class="item-num">34</span><span class="item-title">AS CRIANÇAS DA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="os-cambonos-da-umbanda.html"><span class="item-num">35</span><span class="item-title">OS CAMBONOS DA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="linha-dos-baianos-na-umbanda.html"><span class="item-num">36</span><span class="item-title">OS BAIANOS NA UMBANDA
 Linha dos Baianos na Umbanda</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/exu-7-facadas-ataque-e-defesa.html"><span class="item-num">37</span><span class="item-title">EXU 7 FACADAS: ATAQUE E DEFESA! EXU 7 FACADAS: ATAQUE E DEFESA!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-orob-a-semente-da-felicidade.html"><span class="item-num">38</span><span class="item-title">O OROBÔ
+<a class="post-item" href="exu-7-facadas-ataque-e-defesa.html"><span class="item-num">37</span><span class="item-title">EXU 7 FACADAS: ATAQUE E DEFESA! EXU 7 FACADAS: ATAQUE E DEFESA!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-orob-a-semente-da-felicidade.html"><span class="item-num">38</span><span class="item-title">O OROBÔ
 A semente da felicidade</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/b-n-o-de-preto-velho-tem-poder.html"><span class="item-num">39</span><span class="item-title">BÊNÇÃO DE PRETO- VELHO TEM PODER      ! BÊNÇÃO DE PRETO- VELHO TEM PODER!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/pemba-o-risco-da-f.html"><span class="item-num">40</span><span class="item-title">PEMBA: O RISCO DA FÉ!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/umbanda-tra-ada-ou-cruzada-o-que.html"><span class="item-num">41</span><span class="item-title">UMBANDA TRAÇADA OU CRUZADA: O QUE É?</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/m-e-nan-buruku-a-maturidade-plena-do-sagrado-feminino-na-umbanda.html"><span class="item-num">42</span><span class="item-title">MÃE NANÃ BURUKU: A MATURIDADE PLENA DO SAGRADO FEMININO NA UMBANDA. MÃE NANÃ BURUKU: A MATURIDADE PLENA DO SAGRADO FEMININO NA UMBANDA.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ervasefolhasdosorix-s.html"><span class="item-num">43</span><span class="item-title">O poder da erva melão de São Caetano</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/aomeupaixang-eupe-onab-n-odeoxal-queatenda-sminhaspalavraseou-ameucora-o.html"><span class="item-num">44</span><span class="item-title">ORAÇÃO DA QUARTA-FEIRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-que-aprendemos-com-xang.html"><span class="item-num">45</span><span class="item-title">QUE APRENDEMOS COM XANGÔ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/rezas-de-cura-aos-orix-s.html"><span class="item-num">46</span><span class="item-title">REZAS DE CURA AOS ORIXÁS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-uso-do-ovo-na-umbanda.html"><span class="item-num">47</span><span class="item-title">OVO:  FONTE DE VIDA E ABUNDÂNCIA. O uso do ovo na Umbanda</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/consci-ncia-negra-na-umbanda.html"><span class="item-num">48</span><span class="item-title">CONSCIÊNCIA NEGRA NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/umbanda-a-religi-o-de-deus.html"><span class="item-num">49</span><span class="item-title">UMBANDA: RELIGIÃO DE DEUS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-amal-de-xang-o-resgate-da-ancestralidade.html"><span class="item-num">50</span><span class="item-title">AMALÁ DE XANGÔ: O RESGATE DA ANCESTRALIDADE.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ora-o-da-sexta-feira.html"><span class="item-num">51</span><span class="item-title">ORAÇÃO DA SEXTA FEIRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ogum-na-umbanda.html"><span class="item-num">52</span><span class="item-title">OGUM: SENHOR DOS LIMITES E DA ORDEM Ogum na Umbanda</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/2025-ano-do-reinado-de-ians-e-xang.html"><span class="item-num">53</span><span class="item-title">2025: ANO DO REINADO DE IANSÃ E XANGÔ  2025: ANO DO REINADO DE IANSÃ E XANGÔ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-poder-do-ponto-riscado.html"><span class="item-num">54</span><span class="item-title">O PODER DO PONTO RISCADO</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/feliz-natal-na-umbanda.html"><span class="item-num">55</span><span class="item-title">FELIZ NATAL NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/a-caridade-na-umbanda.html"><span class="item-num">56</span><span class="item-title">CARIDADE NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ervas-consagradas-a-omolu-obaluai.html"><span class="item-num">57</span><span class="item-title">ERVAS CONSAGRADAS A OMOLU/OBALUAIÊ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/oumbandistadefato-sabesuaorigem-conheceseusorix-s-suasrezas-seuscantoselouvores.html"><span class="item-num">58</span><span class="item-title">SUA FÉ É RESPEITADA?</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-que-ser-umbandista.html"><span class="item-num">59</span><span class="item-title">O QUE É SER UMBANDISTA?</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/cumeeira-a-sustenta-o-do-ax.html"><span class="item-num">60</span><span class="item-title">CUMEEIRA: A SUSTENTAÇÃO DO AXÉ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/oxal-o-sopro-da-vida.html"><span class="item-num">61</span><span class="item-title">Oxalá: o Senhor da vida!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/orienta-es-2023.html"><span class="item-num">62</span><span class="item-title">2023: O ANO DE IEMANJÁ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/os-boiadeiros-na-umbanda.html"><span class="item-num">63</span><span class="item-title">OS BOIADEIROS NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/caf-de-preto-velho.html"><span class="item-num">64</span><span class="item-title">SEGUNDA-FEIRA É DIA DAS ALMAS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/decodeURIComponent-e.html"><span class="item-num">65</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o.html"><span class="item-num">66</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/panac-ia.html"><span class="item-num">67</span><span class="item-title">O poder de cura da panacéia.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/nan-buruqu-acolhimento-e-autoperd-o.html"><span class="item-num">68</span><span class="item-title">NANÃ BURUQUÊ: ACOLHIMENTO E AUTOPERDÃO</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/deus-cria-a-umbanda-adora.html"><span class="item-num">69</span><span class="item-title">DEUS CRIA A UMBANDA ADORA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/a-mulher-na-umbanda.html"><span class="item-num">70</span><span class="item-title">A MULHER NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/mediunidade-sem-instru-o.html"><span class="item-num">71</span><span class="item-title">MEDIUNIDADE SEM INSTRUÇÃO.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ora-o-da-segunda-feira.html"><span class="item-num">72</span><span class="item-title">ORAÇÃO DA SEGUNDA-FEIRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/mariwo.html"><span class="item-num">73</span><span class="item-title">A proteção de Ogum</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ora-o-da-ter-a-feira.html"><span class="item-num">74</span><span class="item-title">ORAÇÃO DA TERÇA-FEIRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ervas-e-folhas-de-nan-buruqu.html"><span class="item-num">75</span><span class="item-title">ERVAS E FOLHAS DE NANÃ BURUQUÊ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/mem-ria-ancestral-da-cultura-negra.html"><span class="item-num">76</span><span class="item-title">MEMÓRIA ANCESTRAL DA CULTURA NEGRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/banho-do-s-bado-para-o-amor.html"><span class="item-num">77</span><span class="item-title">BANHO DO SÁBADO PARA O AMOR</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ora-o-do-s-bado.html"><span class="item-num">78</span><span class="item-title">ORAÇÃO DO SÁBADO</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-reinado-de-seu-7-da-lira.html"><span class="item-num">79</span><span class="item-title">MÃE CACILDA DE ASSIS
+<a class="post-item" href="b-n-o-de-preto-velho-tem-poder.html"><span class="item-num">39</span><span class="item-title">BÊNÇÃO DE PRETO- VELHO TEM PODER      ! BÊNÇÃO DE PRETO- VELHO TEM PODER!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="pemba-o-risco-da-f.html"><span class="item-num">40</span><span class="item-title">PEMBA: O RISCO DA FÉ!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="umbanda-tra-ada-ou-cruzada-o-que.html"><span class="item-num">41</span><span class="item-title">UMBANDA TRAÇADA OU CRUZADA: O QUE É?</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="m-e-nan-buruku-a-maturidade-plena-do-sagrado-feminino-na-umbanda.html"><span class="item-num">42</span><span class="item-title">MÃE NANÃ BURUKU: A MATURIDADE PLENA DO SAGRADO FEMININO NA UMBANDA. MÃE NANÃ BURUKU: A MATURIDADE PLENA DO SAGRADO FEMININO NA UMBANDA.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ervasefolhasdosorix-s.html"><span class="item-num">43</span><span class="item-title">O poder da erva melão de São Caetano</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="aomeupaixang-eupe-onab-n-odeoxal-queatenda-sminhaspalavraseou-ameucora-o.html"><span class="item-num">44</span><span class="item-title">ORAÇÃO DA QUARTA-FEIRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-que-aprendemos-com-xang.html"><span class="item-num">45</span><span class="item-title">QUE APRENDEMOS COM XANGÔ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="rezas-de-cura-aos-orix-s.html"><span class="item-num">46</span><span class="item-title">REZAS DE CURA AOS ORIXÁS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-uso-do-ovo-na-umbanda.html"><span class="item-num">47</span><span class="item-title">OVO:  FONTE DE VIDA E ABUNDÂNCIA. O uso do ovo na Umbanda</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="consci-ncia-negra-na-umbanda.html"><span class="item-num">48</span><span class="item-title">CONSCIÊNCIA NEGRA NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="umbanda-a-religi-o-de-deus.html"><span class="item-num">49</span><span class="item-title">UMBANDA: RELIGIÃO DE DEUS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-amal-de-xang-o-resgate-da-ancestralidade.html"><span class="item-num">50</span><span class="item-title">AMALÁ DE XANGÔ: O RESGATE DA ANCESTRALIDADE.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ora-o-da-sexta-feira.html"><span class="item-num">51</span><span class="item-title">ORAÇÃO DA SEXTA FEIRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ogum-na-umbanda.html"><span class="item-num">52</span><span class="item-title">OGUM: SENHOR DOS LIMITES E DA ORDEM Ogum na Umbanda</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="2025-ano-do-reinado-de-ians-e-xang.html"><span class="item-num">53</span><span class="item-title">2025: ANO DO REINADO DE IANSÃ E XANGÔ  2025: ANO DO REINADO DE IANSÃ E XANGÔ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-poder-do-ponto-riscado.html"><span class="item-num">54</span><span class="item-title">O PODER DO PONTO RISCADO</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="feliz-natal-na-umbanda.html"><span class="item-num">55</span><span class="item-title">FELIZ NATAL NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="a-caridade-na-umbanda.html"><span class="item-num">56</span><span class="item-title">CARIDADE NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ervas-consagradas-a-omolu-obaluai.html"><span class="item-num">57</span><span class="item-title">ERVAS CONSAGRADAS A OMOLU/OBALUAIÊ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="oumbandistadefato-sabesuaorigem-conheceseusorix-s-suasrezas-seuscantoselouvores.html"><span class="item-num">58</span><span class="item-title">SUA FÉ É RESPEITADA?</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-que-ser-umbandista.html"><span class="item-num">59</span><span class="item-title">O QUE É SER UMBANDISTA?</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="cumeeira-a-sustenta-o-do-ax.html"><span class="item-num">60</span><span class="item-title">CUMEEIRA: A SUSTENTAÇÃO DO AXÉ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="oxal-o-sopro-da-vida.html"><span class="item-num">61</span><span class="item-title">Oxalá: o Senhor da vida!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="orienta-es-2023.html"><span class="item-num">62</span><span class="item-title">2023: O ANO DE IEMANJÁ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="os-boiadeiros-na-umbanda.html"><span class="item-num">63</span><span class="item-title">OS BOIADEIROS NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="caf-de-preto-velho.html"><span class="item-num">64</span><span class="item-title">SEGUNDA-FEIRA É DIA DAS ALMAS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="decodeURIComponent-e.html"><span class="item-num">65</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o.html"><span class="item-num">66</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="panac-ia.html"><span class="item-num">67</span><span class="item-title">O poder de cura da panacéia.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="nan-buruqu-acolhimento-e-autoperd-o.html"><span class="item-num">68</span><span class="item-title">NANÃ BURUQUÊ: ACOLHIMENTO E AUTOPERDÃO</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="deus-cria-a-umbanda-adora.html"><span class="item-num">69</span><span class="item-title">DEUS CRIA A UMBANDA ADORA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="a-mulher-na-umbanda.html"><span class="item-num">70</span><span class="item-title">A MULHER NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="mediunidade-sem-instru-o.html"><span class="item-num">71</span><span class="item-title">MEDIUNIDADE SEM INSTRUÇÃO.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ora-o-da-segunda-feira.html"><span class="item-num">72</span><span class="item-title">ORAÇÃO DA SEGUNDA-FEIRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="mariwo.html"><span class="item-num">73</span><span class="item-title">A proteção de Ogum</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ora-o-da-ter-a-feira.html"><span class="item-num">74</span><span class="item-title">ORAÇÃO DA TERÇA-FEIRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ervas-e-folhas-de-nan-buruqu.html"><span class="item-num">75</span><span class="item-title">ERVAS E FOLHAS DE NANÃ BURUQUÊ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="mem-ria-ancestral-da-cultura-negra.html"><span class="item-num">76</span><span class="item-title">MEMÓRIA ANCESTRAL DA CULTURA NEGRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="banho-do-s-bado-para-o-amor.html"><span class="item-num">77</span><span class="item-title">BANHO DO SÁBADO PARA O AMOR</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ora-o-do-s-bado.html"><span class="item-num">78</span><span class="item-title">ORAÇÃO DO SÁBADO</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-reinado-de-seu-7-da-lira.html"><span class="item-num">79</span><span class="item-title">MÃE CACILDA DE ASSIS
 O Reinado de Seu 7 da Lira</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/banho-para-auxiliar-na-cura-da-depress-o-e-melancolia.html"><span class="item-num">80</span><span class="item-title">Banho para auxiliar na cura de doenças físicas e espirituais</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ox-ssi-o-provedor.html"><span class="item-num">81</span><span class="item-title">Oxóssi: o provedor</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/window-location.html"><span class="item-num">82</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/banhos-de-descarrego-o-sangue-verde.html"><span class="item-num">83</span><span class="item-title">BANHOS DE DESCARREGO(I)
+<a class="post-item" href="banho-para-auxiliar-na-cura-da-depress-o-e-melancolia.html"><span class="item-num">80</span><span class="item-title">Banho para auxiliar na cura de doenças físicas e espirituais</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ox-ssi-o-provedor.html"><span class="item-num">81</span><span class="item-title">Oxóssi: o provedor</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="window-location.html"><span class="item-num">82</span><span class="item-title">Post | Ogum</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="banhos-de-descarrego-o-sangue-verde.html"><span class="item-num">83</span><span class="item-title">BANHOS DE DESCARREGO(I)
 O Sangue Verde</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/de-exu-a-oxal-o-uso-da-canjica-na-umbanda.html"><span class="item-num">84</span><span class="item-title">DE EXU A OXALÁ: O USO DA CANJICA NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/carta-de-nan-para-suas-filhas.html"><span class="item-num">85</span><span class="item-title">Carta de Nanã Buruquê para suas filhas</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/rom-o-poder-da-fruta-de-2025.html"><span class="item-num">86</span><span class="item-title">ROMÃ: O PODER DA FRUTA DE 2025</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ervas-e-folhas-consagradas-a-ians.html"><span class="item-num">87</span><span class="item-title">ERVAS E FOLHAS CONSAGRADAS A IANSÃ</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ter-a-feira-dia-de-louvar-ogum.html"><span class="item-num">88</span><span class="item-title">Ogum: o Senhor dos caminhos.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ora-o-da-quinta-feira.html"><span class="item-num">89</span><span class="item-title">ORAÇÃO DA QUINTA-FEIRA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ora-es-do-domingo.html"><span class="item-num">90</span><span class="item-title">ORAÇÕES DO DOMINGO</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/a-prosperidade-na-umbanda.html"><span class="item-num">91</span><span class="item-title">A PROSPERIDADE NA UMBANDA</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/umbanda-a-for-a-que-nos-conduz.html"><span class="item-num">92</span><span class="item-title">A história de luta que fortalece a Umbanda</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/regentes-do-ano-de-2026-cumpra-se-a-lei.html"><span class="item-num">93</span><span class="item-title">REGENTES DO ANO DE 2026: CUMPRA-SE A LEI! REGENTES DO ANO DE 2026: CUMPRA-SE A LEI!</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/mingau-das-almas-alimento-de-cura-e-prote-o.html"><span class="item-num">94</span><span class="item-title">MINGAU DAS ALMAS: ALIMENTO DE CURA E DEVOÇÃO</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/favas-o-poder-que-vem-do-fundo-da-terra.html"><span class="item-num">95</span><span class="item-title">FAVAS: O PODER QUE VEM DO FUNDO DA TERRA. FAVAS: O PODER QUE VEM DO FUNDO DA TERRA.</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/mandinga-patu.html"><span class="item-num">96</span><span class="item-title">patuá</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/os-animais-e-os-orix-s.html"><span class="item-num">97</span><span class="item-title">OS ANIMAIS E OS ORIXÁS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-trabalhador-de-ogum.html"><span class="item-num">98</span><span class="item-title">O TRABALHADOR DE OGUM</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/acreditamos-em-ox-ssi-porque.html"><span class="item-num">99</span><span class="item-title">ACREDITAMOS EM OXÓSSI PORQUE...</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/kalunga-ou-calunga.html"><span class="item-num">100</span><span class="item-title">Kalunga ou Calunga ?</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/ians-e-o-arqu-tipo-de-seus-filhos.html"><span class="item-num">101</span><span class="item-title">IANSÃ E O ARQUÉTIPO DE SEUS FILHOS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/o-cruzeiro-das-almas.html"><span class="item-num">102</span><span class="item-title">CRUZEIRO DAS ALMAS</span><span class="item-arrow">›</span></a>
-<a class="post-item" href="posts/exu-7-encruzilhadas.html"><span class="item-num">103</span><span class="item-title">EXU 7 ENCRUZILHADAS EXU 7 ENCRUZILHADAS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="de-exu-a-oxal-o-uso-da-canjica-na-umbanda.html"><span class="item-num">84</span><span class="item-title">DE EXU A OXALÁ: O USO DA CANJICA NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="carta-de-nan-para-suas-filhas.html"><span class="item-num">85</span><span class="item-title">Carta de Nanã Buruquê para suas filhas</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="rom-o-poder-da-fruta-de-2025.html"><span class="item-num">86</span><span class="item-title">ROMÃ: O PODER DA FRUTA DE 2025</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ervas-e-folhas-consagradas-a-ians.html"><span class="item-num">87</span><span class="item-title">ERVAS E FOLHAS CONSAGRADAS A IANSÃ</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ter-a-feira-dia-de-louvar-ogum.html"><span class="item-num">88</span><span class="item-title">Ogum: o Senhor dos caminhos.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ora-o-da-quinta-feira.html"><span class="item-num">89</span><span class="item-title">ORAÇÃO DA QUINTA-FEIRA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ora-es-do-domingo.html"><span class="item-num">90</span><span class="item-title">ORAÇÕES DO DOMINGO</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="a-prosperidade-na-umbanda.html"><span class="item-num">91</span><span class="item-title">A PROSPERIDADE NA UMBANDA</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="umbanda-a-for-a-que-nos-conduz.html"><span class="item-num">92</span><span class="item-title">A história de luta que fortalece a Umbanda</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="regentes-do-ano-de-2026-cumpra-se-a-lei.html"><span class="item-num">93</span><span class="item-title">REGENTES DO ANO DE 2026: CUMPRA-SE A LEI! REGENTES DO ANO DE 2026: CUMPRA-SE A LEI!</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="mingau-das-almas-alimento-de-cura-e-prote-o.html"><span class="item-num">94</span><span class="item-title">MINGAU DAS ALMAS: ALIMENTO DE CURA E DEVOÇÃO</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="favas-o-poder-que-vem-do-fundo-da-terra.html"><span class="item-num">95</span><span class="item-title">FAVAS: O PODER QUE VEM DO FUNDO DA TERRA. FAVAS: O PODER QUE VEM DO FUNDO DA TERRA.</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="mandinga-patu.html"><span class="item-num">96</span><span class="item-title">patuá</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="os-animais-e-os-orix-s.html"><span class="item-num">97</span><span class="item-title">OS ANIMAIS E OS ORIXÁS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-trabalhador-de-ogum.html"><span class="item-num">98</span><span class="item-title">O TRABALHADOR DE OGUM</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="acreditamos-em-ox-ssi-porque.html"><span class="item-num">99</span><span class="item-title">ACREDITAMOS EM OXÓSSI PORQUE...</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="kalunga-ou-calunga.html"><span class="item-num">100</span><span class="item-title">Kalunga ou Calunga ?</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="ians-e-o-arqu-tipo-de-seus-filhos.html"><span class="item-num">101</span><span class="item-title">IANSÃ E O ARQUÉTIPO DE SEUS FILHOS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="o-cruzeiro-das-almas.html"><span class="item-num">102</span><span class="item-title">CRUZEIRO DAS ALMAS</span><span class="item-arrow">›</span></a>
+<a class="post-item" href="exu-7-encruzilhadas.html"><span class="item-num">103</span><span class="item-title">EXU 7 ENCRUZILHADAS EXU 7 ENCRUZILHADAS</span><span class="item-arrow">›</span></a>
 </div>
   <p id="vazio" class="hidden" style="color:rgba(245,240,232,.4);font-style:italic;text-align:center;padding:40px 0">Nenhum artigo encontrado.</p>
 </div>
